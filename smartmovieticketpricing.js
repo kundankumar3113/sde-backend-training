@@ -27,7 +27,9 @@ if (isStudent && age >= 5 && age <= 24) {
 if (isVip) {
   vipDiscount = 30;
 }
-discountpercentage = Math.max(seniorDiscount, studentDiscount, vipDiscount);
+if (age >= 5) {
+  discountpercentage = Math.max(seniorDiscount, studentDiscount, vipDiscount);
+}
 let finalPrice = basePrice * (1 - discountpercentage / 100);
 console.log("discount applied:", discountpercentage + "%");
 console.log("Final Price:", finalPrice);
