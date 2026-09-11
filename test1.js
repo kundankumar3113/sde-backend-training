@@ -96,3 +96,30 @@ function add(k1, k2) {
   return k1 + k2;
 }
 console.log(add(5, 10));
+//even-odd fnction
+function abcd() {
+  let abcd = 5;
+
+  if (abcd % 2 === 0) {
+    console.log("even");
+  } else {
+    console.log("odd");
+  }
+
+  return abcd;
+}
+
+abcd();
+
+//find largest using a function
+
+function largest() {
+  let p = 5;
+  let q = 3;
+  if (p > q) {
+    console.log("p is the largest");
+  } else {
+    console.log("q is the largest");
+  }
+}
+largest();
